@@ -1,0 +1,6 @@
+C:\Users\student_kash\Desktop\vasr2\2\bin\Debug\2.exe.config
+C:\Users\student_kash\Desktop\vasr2\2\bin\Debug\2.exe
+C:\Users\student_kash\Desktop\vasr2\2\bin\Debug\2.pdb
+C:\Users\student_kash\Desktop\vasr2\2\obj\Debug\2.csproj.CoreCompileInputs.cache
+C:\Users\student_kash\Desktop\vasr2\2\obj\Debug\2.exe
+C:\Users\student_kash\Desktop\vasr2\2\obj\Debug\2.pdb
