@@ -1,0 +1,10 @@
+C:\Users\Soft\Downloads\WFlab1\WFlab1\obj\Debug\WFlab1.csprojAssemblyReference.cache
+C:\Users\Soft\Downloads\WFlab1\WFlab1\obj\Debug\WFlab1.Form1.resources
+C:\Users\Soft\Downloads\WFlab1\WFlab1\obj\Debug\WFlab1.Properties.Resources.resources
+C:\Users\Soft\Downloads\WFlab1\WFlab1\obj\Debug\WFlab1.csproj.GenerateResource.cache
+C:\Users\Soft\Downloads\WFlab1\WFlab1\obj\Debug\WFlab1.csproj.CoreCompileInputs.cache
+C:\Users\Soft\Downloads\WFlab1\WFlab1\bin\Debug\WFlab1.exe.config
+C:\Users\Soft\Downloads\WFlab1\WFlab1\bin\Debug\WFlab1.exe
+C:\Users\Soft\Downloads\WFlab1\WFlab1\bin\Debug\WFlab1.pdb
+C:\Users\Soft\Downloads\WFlab1\WFlab1\obj\Debug\WFlab1.exe
+C:\Users\Soft\Downloads\WFlab1\WFlab1\obj\Debug\WFlab1.pdb
