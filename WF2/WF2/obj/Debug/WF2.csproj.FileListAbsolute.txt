@@ -1,0 +1,10 @@
+C:\Users\Soft\Downloads\WF2\WF2\bin\Debug\WF2.exe.config
+C:\Users\Soft\Downloads\WF2\WF2\bin\Debug\WF2.exe
+C:\Users\Soft\Downloads\WF2\WF2\bin\Debug\WF2.pdb
+C:\Users\Soft\Downloads\WF2\WF2\obj\Debug\WF2.csprojAssemblyReference.cache
+C:\Users\Soft\Downloads\WF2\WF2\obj\Debug\WF2.Form1.resources
+C:\Users\Soft\Downloads\WF2\WF2\obj\Debug\WF2.Properties.Resources.resources
+C:\Users\Soft\Downloads\WF2\WF2\obj\Debug\WF2.csproj.GenerateResource.cache
+C:\Users\Soft\Downloads\WF2\WF2\obj\Debug\WF2.csproj.CoreCompileInputs.cache
+C:\Users\Soft\Downloads\WF2\WF2\obj\Debug\WF2.exe
+C:\Users\Soft\Downloads\WF2\WF2\obj\Debug\WF2.pdb
