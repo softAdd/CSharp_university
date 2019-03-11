@@ -12,11 +12,11 @@ namespace WF2
 {
     public partial class Form1 : Form
     {
+        public static Student[] students = new Student[20];
         public Form1()
         {
             InitializeComponent();
 
-            Student[] students = new Student[20];
             students[0] = new Student("Евсей", "ОЭ-102", DateTime.Parse("1999.1.6"), 5, 5, 5);
             students[1] = new Student("Парфен", "ОЭ-203", DateTime.Parse("1998.12.7"), 3, 3, 3);
             students[2] = new Student("Назар", "ИТ-201", DateTime.Parse("1997.1.1"), 3, 4, 5);
