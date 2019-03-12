@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WF2
 {
@@ -17,6 +18,7 @@ namespace WF2
         {
             InitializeComponent();
 
+            label1.Text = "Добавить студента (Имя, Группа, Дата рождения,\n Оценки: физика, математика, информатика)";
             students[0] = new Student("Евсей", "ОЭ-102", DateTime.Parse("1999.1.6"), 5, 5, 5);
             students[1] = new Student("Парфен", "ОЭ-203", DateTime.Parse("1998.12.7"), 3, 3, 3);
             students[2] = new Student("Назар", "ИТ-201", DateTime.Parse("1997.1.1"), 3, 4, 5);
@@ -38,14 +40,13 @@ namespace WF2
             students[18] = new Student("Юлия", "РЭ-201", DateTime.Parse("1998.9.16"), 3, 3, 3);
             students[19] = new Student("Анисья", "ОЭ-203", DateTime.Parse("1999.11.11"), 4, 4, 5);
 
-            richTextBox1.Text += string.Format("{0, -20}\t{1, -20}\t {2, -15}\t{3, -40}", "Имя", "Группа", "Возраст", "Стипендия") + "\n\n";
+            richTextBox1.Text += string.Format("{0, -20}\t{1, -20}\t {2, -15}\t{3, -40}", "Имя", "Группа", "Дата рождения", "Стипендия") + "\n\n";
             for (int i = 0; i < students.Length; i++)
             {
                 var name = students[i].name;
                 var group = students[i].group;
-                var age = students[i].getAge(students[i].dateBirthDay);
                 var scholar = students[i].getScholar(students[i].physMark, students[i].mathMark, students[i].infoMark);
-                var text = string.Format("{0, -20}\t{1, -20}\t {2, -15}\t{3, -40}", name, group, age, scholar);
+                var text = string.Format("{0, -20}\t{1, -20}\t {2, -15}\t{3, -40}", name, group, students[i].dateBirthDay.ToShortDateString(), scholar);
                 richTextBox1.Text += text + "\n";
             }
         }
@@ -55,7 +56,7 @@ namespace WF2
             
         }
 
-        struct Student
+        public struct Student
         {
             public string name;
             public string group;
@@ -110,6 +111,64 @@ namespace WF2
         }
 
         private void label1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var words = richTextBox2.Text.Split(' ');
+            if (words.Length == 6)
+            {
+                Array.Resize(ref students, students.Length + 1);
+                var size = students.Length - 1;
+                var stud = new Student(words[0], words[1], DateTime.Parse(words[2]), int.Parse(words[3]), int.Parse(words[4]), int.Parse(words[5]));
+                students[size] = stud;
+                var name = students[size].name;
+                var group = students[size].group;
+                var scholar = students[size].getScholar(students[size - 1].physMark, students[size].mathMark, students[size].infoMark);
+                var text = string.Format("{0, -20}\t{1, -20}\t {2, -15}\t{3, -40}", name, group, DateTime.Parse(words[2]).ToShortDateString(), scholar);
+                richTextBox1.Text += text;
+                richTextBox2.Text = "";
+            } else
+            {
+                richTextBox2.Text = "";
+                MessageBox.Show("Введены неверные данные");
+            }
+        }
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            var path = @"C:\Users\Soft\Desktop\table.txt";
+            FileStream fs = File.Create(path);
+            Byte[] b_text = new UTF8Encoding(true).GetBytes(richTextBox1.Text);
+            fs.Write(b_text, 0, b_text.Length);
+            fs.Close();
+        }
+
+        private void richTextBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < students.Length; i++)
+            {
+                listBox1.Text += students[i].name + " ";
+                if (students[i].getAge(students[i].dateBirthDay) >= 19)
+                {
+                    listBox1.Text += students[i].name + " ";
+                    listBox1.Text += students[i].getAge(students[i].dateBirthDay) + "\n";
+                }
+            }
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
