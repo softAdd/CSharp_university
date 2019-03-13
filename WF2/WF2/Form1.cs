@@ -159,11 +159,10 @@ namespace WF2
         {
             for (int i = 0; i < students.Length; i++)
             {
-                listBox1.Text += students[i].name + " ";
                 if (students[i].getAge(students[i].dateBirthDay) >= 19)
                 {
-                    listBox1.Text += students[i].name + " ";
-                    listBox1.Text += students[i].getAge(students[i].dateBirthDay) + "\n";
+                    var elem = students[i].name + " - " + students[i].getAge(students[i].dateBirthDay) + " лет";
+                    listBox1.Items.Add(elem);
                 }
             }
         }
