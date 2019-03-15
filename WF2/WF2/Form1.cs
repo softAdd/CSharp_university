@@ -14,6 +14,7 @@ namespace WF2
     public partial class Form1 : Form
     {
         public static Student[] students = new Student[20];
+        public static List<Student> addedStudents = new List<Student>();
         public Form1()
         {
             InitializeComponent();
@@ -40,15 +41,11 @@ namespace WF2
             students[18] = new Student("Юлия", "РЭ-201", DateTime.Parse("1998.9.16"), 3, 3, 3);
             students[19] = new Student("Анисья", "ОЭ-203", DateTime.Parse("1999.11.11"), 4, 4, 5);
 
-            richTextBox1.Text += string.Format("{0, -20}\t{1, -20}\t {2, -15}\t{3, -40}", "Имя", "Группа", "Дата рождения", "Стипендия") + "\n\n";
-            for (int i = 0; i < students.Length; i++)
-            {
-                var name = students[i].name;
-                var group = students[i].group;
-                var scholar = students[i].getScholar(students[i].physMark, students[i].mathMark, students[i].infoMark);
-                var text = string.Format("{0, -20}\t{1, -20}\t {2, -15}\t{3, -40}", name, group, students[i].dateBirthDay.ToShortDateString(), scholar);
-                richTextBox1.Text += text + "\n";
-            }
+            comboBox1.Items.Add("Все");
+            comboBox1.Items.Add("Есть стипендия");
+            comboBox1.Items.Add("Старше 18 лет");
+            comboBox1.Items.Add("Добавленные");
+            comboBox1.SelectedIndex = 0;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -128,6 +125,7 @@ namespace WF2
                 var group = students[size].group;
                 var scholar = students[size].getScholar(students[size - 1].physMark, students[size].mathMark, students[size].infoMark);
                 var text = string.Format("{0, -20}\t{1, -20}\t {2, -15}\t{3, -40}", name, group, DateTime.Parse(words[2]).ToShortDateString(), scholar);
+                addedStudents.Add(stud);
                 richTextBox1.Text += text;
                 richTextBox2.Text = "";
             } else
@@ -154,22 +152,75 @@ namespace WF2
         {
 
         }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            for (int i = 0; i < students.Length; i++)
+            switch(comboBox1.SelectedIndex)
             {
-                if (students[i].getAge(students[i].dateBirthDay) >= 19)
-                {
-                    var elem = students[i].name + " - " + students[i].getAge(students[i].dateBirthDay) + " лет";
-                    listBox1.Items.Add(elem);
-                }
+                case 0:
+                    richTextBox1.Text = "";
+                    richTextBox1.Text += string.Format("{0, -20}\t{1, -20}\t {2, -15}\t{3, -40}", "Имя", "Группа", "Дата рождения", "Стипендия") + "\n\n";
+                    for (int i = 0; i < students.Length; i++)
+                    {
+                        var name = students[i].name;
+                        var group = students[i].group;
+                        var scholar = students[i].getScholar(students[i].physMark, students[i].mathMark, students[i].infoMark);
+                        var text = string.Format("{0, -20}\t{1, -20}\t {2, -15}\t{3, -40}", name, group, students[i].dateBirthDay.ToShortDateString(), scholar);
+                        richTextBox1.Text += text + "\n";
+                    }
+                    break;
+                case 1:
+                    richTextBox1.Text = "";
+                    richTextBox1.Text += string.Format("{0, -20}\t{1, -20}\t {2, -15}\t{3, -40}", "Имя", "Группа", "Дата рождения", "Стипендия") + "\n\n";
+                    for (int i = 0; i < students.Length; i++)
+                    {
+                        var scholar = students[i].getScholar(students[i].physMark, students[i].mathMark, students[i].infoMark);
+                        if (scholar != 0)
+                        {
+                            var name = students[i].name;
+                            var group = students[i].group;
+                            var text = string.Format("{0, -20}\t{1, -20}\t {2, -15}\t{3, -40}", name, group, students[i].dateBirthDay.ToShortDateString(), scholar);
+                            richTextBox1.Text += text + "\n";
+                        }
+                    }
+                    break;
+                case 2:
+                    richTextBox1.Text = "";
+                    richTextBox1.Text += string.Format("{0, -20}\t{1, -20}", "Имя", "Возраст") + "\n\n";
+                    for (int i = 0; i < students.Length; i++)
+                    {
+                        if (students[i].getAge(students[i].dateBirthDay) >= 19)
+                        {
+                            var elem = students[i].name + " - " + students[i].getAge(students[i].dateBirthDay) + " лет";
+                            var text = string.Format("{0, -20}\t{1, -20}", students[i].name, students[i].getAge(students[i].dateBirthDay));
+                            richTextBox1.Text += text + "\n";
+                        }
+                    }
+                    break;
+                case 3:
+                    richTextBox1.Text = "";
+                    richTextBox1.Text += string.Format("{0, -20}\t{1, -20}\t {2, -15}\t{3, -40}", "Имя", "Группа", "Дата рождения", "Стипендия") + "\n\n";
+                    for (int i = 0; i < addedStudents.Count; i++)
+                    {
+                        var name = addedStudents[i].name;
+                        var group = addedStudents[i].group;
+                        var scholar = addedStudents[i].getScholar(addedStudents[i].physMark, addedStudents[i].mathMark, addedStudents[i].infoMark);
+                        var text = string.Format("{0, -20}\t{1, -20}\t {2, -15}\t{3, -40}", name, group, addedStudents[i].dateBirthDay.ToShortDateString(), scholar);
+                        richTextBox1.Text += text + "\n";
+                    }
+                    break;
+                default:
+                    richTextBox1.Text = "";
+                    richTextBox1.Text += string.Format("{0, -20}\t{1, -20}\t {2, -15}\t{3, -40}", "Имя", "Группа", "Дата рождения", "Стипендия") + "\n\n";
+                    for (int i = 0; i < students.Length; i++)
+                    {
+                        var name = students[i].name;
+                        var group = students[i].group;
+                        var scholar = students[i].getScholar(students[i].physMark, students[i].mathMark, students[i].infoMark);
+                        var text = string.Format("{0, -20}\t{1, -20}\t {2, -15}\t{3, -40}", name, group, students[i].dateBirthDay.ToShortDateString(), scholar);
+                        richTextBox1.Text += text + "\n";
+                    }
+                    break;
             }
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
