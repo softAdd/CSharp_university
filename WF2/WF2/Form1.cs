@@ -19,7 +19,17 @@ namespace WF2
         {
             InitializeComponent();
 
-            label1.Text = "Добавить студента (Имя, Группа, Дата рождения,\n Оценки: физика, математика, информатика)";
+            numericUpDown1.Maximum = 5;
+            numericUpDown2.Maximum = 5;
+            numericUpDown3.Maximum = 5;
+            numericUpDown1.Minimum = 1;
+            numericUpDown2.Minimum = 1;
+            numericUpDown3.Minimum = 1;
+            numericUpDown3.Value = 5;
+            numericUpDown1.Value = 5;
+            numericUpDown2.Value = 5;
+            dateTimePicker1.Value = DateTime.Parse("09.08.1999");
+
             students[0] = new Student("Евсей", "ОЭ-102", DateTime.Parse("1999.1.6"), 5, 5, 5);
             students[1] = new Student("Парфен", "ОЭ-203", DateTime.Parse("1998.12.7"), 3, 3, 3);
             students[2] = new Student("Назар", "ИТ-201", DateTime.Parse("1997.1.1"), 3, 4, 5);
@@ -114,25 +124,24 @@ namespace WF2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var words = richTextBox2.Text.Split(' ');
-            if (words.Length == 6)
-            {
-                Array.Resize(ref students, students.Length + 1);
-                var size = students.Length - 1;
-                var stud = new Student(words[0], words[1], DateTime.Parse(words[2]), int.Parse(words[3]), int.Parse(words[4]), int.Parse(words[5]));
-                students[size] = stud;
-                var name = students[size].name;
-                var group = students[size].group;
-                var scholar = students[size].getScholar(students[size - 1].physMark, students[size].mathMark, students[size].infoMark);
-                var text = string.Format("{0, -20}\t{1, -20}\t {2, -15}\t{3, -40}", name, group, DateTime.Parse(words[2]).ToShortDateString(), scholar);
-                addedStudents.Add(stud);
-                richTextBox1.Text += text;
-                richTextBox2.Text = "";
-            } else
-            {
-                richTextBox2.Text = "";
-                MessageBox.Show("Введены неверные данные");
-            }
+            Array.Resize(ref students, students.Length + 1);
+            var size = students.Length - 1;
+            var stud = new Student(textBox1.Text, textBox2.Text, dateTimePicker1.Value, Convert.ToInt32(numericUpDown3.Value), Convert.ToInt32(numericUpDown1.Value), Convert.ToInt32(numericUpDown2.Value));
+            students[size] = stud;
+            addedStudents.Add(stud);
+
+            var name = students[size].name;
+            var group = students[size].group;
+            var scholar = students[size].getScholar(students[size].physMark, students[size].mathMark, students[size].infoMark);
+            var text = string.Format("{0, -20}\t{1, -20}\t {2, -15}\t{3, -40}", textBox1.Text, textBox2.Text, dateTimePicker1.Value.ToShortDateString(), scholar);
+
+            numericUpDown3.Value = 5;
+            numericUpDown1.Value = 5;
+            numericUpDown2.Value = 5;
+            textBox1.Text = "";
+            textBox2.Text = "";
+            dateTimePicker1.Value = DateTime.Parse("09.08.1999");
+            richTextBox1.Text += text;
         }
         private void button2_Click_1(object sender, EventArgs e)
         {
@@ -221,6 +230,26 @@ namespace WF2
                     }
                     break;
             }
+        }
+
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown3_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
