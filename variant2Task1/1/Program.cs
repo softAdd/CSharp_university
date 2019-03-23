@@ -13,10 +13,10 @@ namespace _1
             Console.Write("Введите количество элементов массива: ");
             int count = int.Parse(Console.ReadLine());
             char[] mas = new char[count];
-            for (int i = 1; i < mas.Length + 1; i++)
+            for (int i = 0; i < mas.Length; i++)
             {
                 Console.Write($"Введите элемент {i}: ");
-                mas[i] = char.Parse(Console.ReadLine());
+                mas[i + 1] = char.Parse(Console.ReadLine());
             }
             Console.WriteLine("Вывод массива с определением типов символов:");
             foreach (char elem in mas)
