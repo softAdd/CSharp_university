@@ -24,9 +24,9 @@ namespace _1
                 if (Char.IsDigit(elem))
                 {
                     Console.WriteLine(elem + "- число");
-                } else if (Char.IsSeparator(elem))
+                } else if (Char.IsSymbol(elem))
                 {
-                    Console.WriteLine(elem + "- знак препинания");          
+                    Console.WriteLine(elem + "- символ");          
                 } else if (Char.IsLower(elem))
                 {
                     Console.WriteLine(elem + "- буква в нижнем регистре");
