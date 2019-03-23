@@ -15,8 +15,8 @@ namespace _1
             char[] mas = new char[count];
             for (int i = 0; i < mas.Length; i++)
             {
-                Console.Write($"Введите элемент {i}: ");
-                mas[i + 1] = char.Parse(Console.ReadLine());
+                Console.Write($"Введите элемент {i + 1}: ");
+                mas[i] = char.Parse(Console.ReadLine());
             }
             Console.WriteLine("Вывод массива с определением типов символов:");
             foreach (char elem in mas)
