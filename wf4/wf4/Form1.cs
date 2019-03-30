@@ -56,7 +56,14 @@ namespace wf4
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            List<Book> lib = new List<Book>();
+            var text = richTextBox1.Text;
+            var sel = from book in _Lib
+                      where book.author.Contains(text)
+                      select book;
+            dataGridView1.Rows.Clear();
+            lib = sel.ToList();
+            dataGridView1.DataSource = lib;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -71,20 +78,23 @@ namespace wf4
             byte[] array = new byte[fs.Length];
             fs.Read(array, 0, array.Length);
             string textFromFile = System.Text.Encoding.Default.GetString(array);
-
+            var comboFields = new List<string>();
             var structArray = textFromFile.Split('#');
             for (int i = 0; i < structArray.Length; i++)
             {
                 var bookFields = structArray[i].Split('|');
                 if (bookFields.Length == 8)
                 {
-                    for (int j = 0; j < bookFields.Length; j++)
-                    {
-                        var pattern = @"\s";
-                        //bookFields[j] = Regex.Replace(bookFields[j], pattern, "");
-                    }
                     Book newbie = new Book(bookFields[0], bookFields[1], bookFields[2], bookFields[3], bookFields[4], bookFields[5], bookFields[6], bookFields[7]);
                     lib.Add(newbie);
+                    var is_field = false;
+                    var lastYear = newbie.lastDateGiven;
+                    lastYear = lastYear.Substring(7);
+                    if (!comboFields.Contains(lastYear))
+                    {
+                        comboFields.Add(lastYear);
+                        comboBox1.Items.Add(lastYear);
+                    }
                 }
             }
             
@@ -130,6 +140,16 @@ namespace wf4
 
             _Lib = lib;
             fs.Close();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
