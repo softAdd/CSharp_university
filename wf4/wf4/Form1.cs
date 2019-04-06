@@ -26,22 +26,10 @@ namespace wf4
             public string title;
             public string author;
             public string genre;
-            public string price;
+            public int price;
             public string numOfReaders;
             public string publishingYear;
             public string lastDateGiven;
-
-            public Book(string num, string title, string author, string genre, string price, string readers, string year, string lastDate)
-            {
-                this.invNum = num;
-                this.title = title;
-                this.author = author;
-                this.genre = genre;
-                this.price = price;
-                this.numOfReaders = readers;
-                this.publishingYear = year;
-                this.lastDateGiven = lastDate;
-            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -56,90 +44,59 @@ namespace wf4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            List<Book> lib = new List<Book>();
+
+
+            /* LINQ */
             var text = richTextBox1.Text;
             var sel = from book in _Lib
                       where book.author.Contains(text)
                       select book;
+            /* LINQ */
             dataGridView1.Rows.Clear();
-            lib = sel.ToList();
-            dataGridView1.DataSource = lib;
+            foreach (var elem in sel)
+            {
+                dataGridView1.Rows.Add(elem.invNum, elem.title, elem.author, elem.genre, elem.price, elem.numOfReaders, elem.publishingYear, elem.lastDateGiven);
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            /* LINQ */
+            var text = comboBox1.Text;
+            var sel = from book in _Lib
+                      where book.lastDateGiven.Contains(text)
+                      select book;
+            /* LINQ */
 
+            dataGridView1.Rows.Clear();
+            foreach (var elem in sel)
+            {
+                dataGridView1.Rows.Add(elem.invNum, elem.title, elem.author, elem.genre, elem.price, elem.numOfReaders, elem.publishingYear, elem.lastDateGiven);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            List<Book> lib = new List<Book>();
-            FileStream fs = File.OpenRead(@"C:\Users\Soft\Desktop\wf4\booklibEdit.txt");
-            byte[] array = new byte[fs.Length];
-            fs.Read(array, 0, array.Length);
-            string textFromFile = System.Text.Encoding.Default.GetString(array);
-            var comboFields = new List<string>();
-            var structArray = textFromFile.Split('#');
-            for (int i = 0; i < structArray.Length; i++)
+            Book t;
+            string[] mas = File.ReadAllLines(@"C:\Users\Soft\Desktop\wf4\booklib.txt");
+            for (var i = 0; i < mas.Length; i++)
             {
-                var bookFields = structArray[i].Split('|');
-                if (bookFields.Length == 8)
-                {
-                    Book newbie = new Book(bookFields[0], bookFields[1], bookFields[2], bookFields[3], bookFields[4], bookFields[5], bookFields[6], bookFields[7]);
-                    lib.Add(newbie);
-                    var is_field = false;
-                    var lastYear = newbie.lastDateGiven;
-                    lastYear = lastYear.Substring(7);
-                    if (!comboFields.Contains(lastYear))
-                    {
-                        comboFields.Add(lastYear);
-                        comboBox1.Items.Add(lastYear);
-                    }
-                }
+                string[] s = mas[i].Split('|');
+                t.invNum = s[0];
+                t.title = s[1];
+                t.author = s[2];
+                t.genre = s[3];
+                t.price = int.Parse(s[4]);
+                t.numOfReaders = s[5];
+                t.publishingYear = s[6];
+                t.lastDateGiven = s[7];
+                _Lib.Add(t);
             }
-            
-            dataGridView1.DataSource = lib;
-            for (int j = 0; j < dataGridView1.ColumnCount; j++)
+            dataGridView1.Rows.Clear();
+            foreach (var book in _Lib)
             {
-                for (int i = 0; i < lib.Count; i++)
-                {
-                    if (j == 0)
-                    {
-                        dataGridView1[j, i].Value = lib[i].invNum;
-                    }
-                    if (j == 1)
-                    {
-                        dataGridView1[j, i].Value = lib[i].title;
-                    }
-                    if (j == 2)
-                    {
-                        dataGridView1[j, i].Value = lib[i].author;
-                    }
-                    if (j == 3)
-                    {
-                        dataGridView1[j, i].Value = lib[i].genre;
-                    }
-                    if (j == 4)
-                    {
-                        dataGridView1[j, i].Value = lib[i].price;
-                    }
-                    if (j == 5)
-                    {
-                        dataGridView1[j, i].Value = lib[i].numOfReaders;
-                    }
-                    if (j == 6)
-                    {
-                        dataGridView1[j, i].Value = lib[i].publishingYear;
-                    }
-                    if (j == 7)
-                    {
-                        dataGridView1[j, i].Value = lib[i].lastDateGiven;
-                    }
-                }
+                dataGridView1.Rows.Add(book.invNum, book.title, book.author, book.genre, book.price.ToString(), book.numOfReaders, book.publishingYear, book.lastDateGiven);
             }
-
-            _Lib = lib;
-            fs.Close();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -148,6 +105,32 @@ namespace wf4
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            StreamWriter go = new StreamWriter(@"C:\Users\Soft\Desktop\wf4\booklibEdit.txt");
+
+            for (var row = 0; row < dataGridView1.Rows.Count; row++)
+            {
+                go.WriteLine(dataGridView1[0, row].Value);
+                go.WriteLine(" | " + dataGridView1[1, row].Value);
+                go.WriteLine(" | " + dataGridView1[2, row].Value);
+                go.WriteLine(" | " + dataGridView1[3, row].Value);
+                go.WriteLine(" | " + dataGridView1[4, row].Value);
+                go.WriteLine(" | " + dataGridView1[5, row].Value);
+                go.WriteLine(" | " + dataGridView1[6, row].Value);
+                go.WriteLine(" | " + dataGridView1[7, row].Value);
+            }
+
+            var date = DateTime.Now;
+            go.Write("\nПоследняя дата поиска: " + date.ToString());
+            go.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }
