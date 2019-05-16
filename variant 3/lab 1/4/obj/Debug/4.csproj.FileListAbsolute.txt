@@ -1,0 +1,6 @@
+C:\Users\Soft\Downloads\3 вариант\lab 1\4\bin\Debug\4.exe.config
+C:\Users\Soft\Downloads\3 вариант\lab 1\4\bin\Debug\4.exe
+C:\Users\Soft\Downloads\3 вариант\lab 1\4\bin\Debug\4.pdb
+C:\Users\Soft\Downloads\3 вариант\lab 1\4\obj\Debug\4.csproj.CoreCompileInputs.cache
+C:\Users\Soft\Downloads\3 вариант\lab 1\4\obj\Debug\4.exe
+C:\Users\Soft\Downloads\3 вариант\lab 1\4\obj\Debug\4.pdb
