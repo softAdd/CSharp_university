@@ -27,14 +27,14 @@ namespace lab_2
 
         public List<Good> goods = new List<Good>
         {
-            new Good { Id=0, Title="Лопата", Price=100 },
-            new Good { Id=1, Title="Грабли", Price=70 },
-            new Good { Id=3, Title="Маленькая лопата", Price=50 },
-            new Good { Id=4, Title="Горшок для цветка", Price=60 },
-            new Good { Id=5, Title="Мешок", Price=20 },
-            new Good { Id=6, Title="Клейкая лента", Price=35 },
-            new Good { Id=7, Title="Ведро", Price=40 },
-            new Good { Id=8, Title="Пленка защитная", Price=40 }
+            new Good { Id=0, Title="Лопата - 100р", Price=100 },
+            new Good { Id=1, Title="Грабли - 70р", Price=70 },
+            new Good { Id=3, Title="Маленькая лопата - 50р", Price=50 },
+            new Good { Id=4, Title="Горшок для цветка - 60р", Price=60 },
+            new Good { Id=5, Title="Мешок - 20р", Price=20 },
+            new Good { Id=6, Title="Клейкая лента - 35р", Price=35 },
+            new Good { Id=7, Title="Ведро - 40р", Price=40 },
+            new Good { Id=8, Title="Пленка защитная - 40р", Price=40 }
         };
         public double discount = 1;
         private void Form1_Load(object sender, EventArgs e)
