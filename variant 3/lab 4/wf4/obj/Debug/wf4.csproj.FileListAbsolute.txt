@@ -1,0 +1,20 @@
+C:\Users\Soft\Desktop\wf4\wf4\bin\Debug\wf4.exe.config
+C:\Users\Soft\Desktop\wf4\wf4\bin\Debug\wf4.exe
+C:\Users\Soft\Desktop\wf4\wf4\bin\Debug\wf4.pdb
+C:\Users\Soft\Desktop\wf4\wf4\obj\Debug\wf4.csprojAssemblyReference.cache
+C:\Users\Soft\Desktop\wf4\wf4\obj\Debug\wf4.Form1.resources
+C:\Users\Soft\Desktop\wf4\wf4\obj\Debug\wf4.Properties.Resources.resources
+C:\Users\Soft\Desktop\wf4\wf4\obj\Debug\wf4.csproj.GenerateResource.cache
+C:\Users\Soft\Desktop\wf4\wf4\obj\Debug\wf4.csproj.CoreCompileInputs.cache
+C:\Users\Soft\Desktop\wf4\wf4\obj\Debug\wf4.exe
+C:\Users\Soft\Desktop\wf4\wf4\obj\Debug\wf4.pdb
+C:\Users\Soft\Downloads\3 вариант\lab 4\wf4\obj\Debug\wf4.csprojAssemblyReference.cache
+C:\Users\Soft\Downloads\3 вариант\lab 4\wf4\obj\Debug\wf4.Form1.resources
+C:\Users\Soft\Downloads\3 вариант\lab 4\wf4\obj\Debug\wf4.Properties.Resources.resources
+C:\Users\Soft\Downloads\3 вариант\lab 4\wf4\obj\Debug\wf4.csproj.GenerateResource.cache
+C:\Users\Soft\Downloads\3 вариант\lab 4\wf4\obj\Debug\wf4.csproj.CoreCompileInputs.cache
+C:\Users\Soft\Downloads\3 вариант\lab 4\wf4\obj\Debug\wf4.exe
+C:\Users\Soft\Downloads\3 вариант\lab 4\wf4\obj\Debug\wf4.pdb
+C:\Users\Soft\Downloads\3 вариант\lab 4\wf4\bin\Debug\wf4.exe.config
+C:\Users\Soft\Downloads\3 вариант\lab 4\wf4\bin\Debug\wf4.exe
+C:\Users\Soft\Downloads\3 вариант\lab 4\wf4\bin\Debug\wf4.pdb

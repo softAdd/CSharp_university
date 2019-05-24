@@ -1,0 +1,36 @@
+﻿<Window x:Name="Ателье_мод" x:Class="lab_9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab_9"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="507*"/>
+            <ColumnDefinition Width="52*"/>
+            <ColumnDefinition Width="158*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <ListBox Name="Products" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" FontSize="17">
+        </ListBox>
+        <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Grid.Row="0" Name="Order" FontSize="17" Margin="20 20 20 20" Background="Black" Foreground="White" Click="make_order">Заказать</Button>
+        </Grid>
+        <TextBlock Grid.Column="3" HorizontalAlignment="Center" FontSize="15" Margin="43,92,39,159">Сложность</TextBlock>
+        <ListBox Grid.Column="3" Name="Diff" FontSize="17" Margin="5,117,5,119" Background="Black" Foreground="White"/>
+        <CheckBox Name="Speed" Content="Срочно" Grid.Column="3" HorizontalAlignment="Left" Margin="10,29,0,0" VerticalAlignment="Top" Height="29" Width="75" FontSize="15"/>
+        <CheckBox Name="Home" Content="Доставка на дом" Grid.Column="3" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top" Height="29" Width="135" FontSize="15" RenderTransformOrigin="0.373,-0.4"/>
+    </Grid>
+</Window>

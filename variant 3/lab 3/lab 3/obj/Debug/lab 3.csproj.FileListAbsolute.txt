@@ -1,0 +1,10 @@
+C:\Users\Soft\Downloads\3 вариант\lab 3\lab 3\bin\Debug\lab 3.exe.config
+C:\Users\Soft\Downloads\3 вариант\lab 3\lab 3\bin\Debug\lab 3.exe
+C:\Users\Soft\Downloads\3 вариант\lab 3\lab 3\bin\Debug\lab 3.pdb
+C:\Users\Soft\Downloads\3 вариант\lab 3\lab 3\obj\Debug\lab 3.csprojAssemblyReference.cache
+C:\Users\Soft\Downloads\3 вариант\lab 3\lab 3\obj\Debug\lab_3.Form1.resources
+C:\Users\Soft\Downloads\3 вариант\lab 3\lab 3\obj\Debug\lab_3.Properties.Resources.resources
+C:\Users\Soft\Downloads\3 вариант\lab 3\lab 3\obj\Debug\lab 3.csproj.GenerateResource.cache
+C:\Users\Soft\Downloads\3 вариант\lab 3\lab 3\obj\Debug\lab 3.csproj.CoreCompileInputs.cache
+C:\Users\Soft\Downloads\3 вариант\lab 3\lab 3\obj\Debug\lab 3.exe
+C:\Users\Soft\Downloads\3 вариант\lab 3\lab 3\obj\Debug\lab 3.pdb

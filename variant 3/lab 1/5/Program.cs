@@ -20,7 +20,7 @@ namespace _5
                     is_real = false;
                 }
             }
-            if (double.TryParse(sentence, out double result) && is_real)
+            if (sentence.Split(',').Length < 3 && is_real && sentence[sentence.Length - 1] != ',')
             {
                 Console.WriteLine("Может быть вещественным числом в двоичной системе счисления!");
             } else
