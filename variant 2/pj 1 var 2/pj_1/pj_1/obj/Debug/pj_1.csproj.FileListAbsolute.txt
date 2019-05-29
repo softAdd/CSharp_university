@@ -1,0 +1,11 @@
+C:\Users\Soft\Desktop\Проект 1\pj_1\pj_1\bin\Debug\pj_1.exe.config
+C:\Users\Soft\Desktop\Проект 1\pj_1\pj_1\bin\Debug\pj_1.exe
+C:\Users\Soft\Desktop\Проект 1\pj_1\pj_1\bin\Debug\pj_1.pdb
+C:\Users\Soft\Desktop\Проект 1\pj_1\pj_1\obj\Debug\pj_1.csprojAssemblyReference.cache
+C:\Users\Soft\Desktop\Проект 1\pj_1\pj_1\obj\Debug\pj_1.Form1.resources
+C:\Users\Soft\Desktop\Проект 1\pj_1\pj_1\obj\Debug\pj_1.Form2.resources
+C:\Users\Soft\Desktop\Проект 1\pj_1\pj_1\obj\Debug\pj_1.Properties.Resources.resources
+C:\Users\Soft\Desktop\Проект 1\pj_1\pj_1\obj\Debug\pj_1.csproj.GenerateResource.cache
+C:\Users\Soft\Desktop\Проект 1\pj_1\pj_1\obj\Debug\pj_1.csproj.CoreCompileInputs.cache
+C:\Users\Soft\Desktop\Проект 1\pj_1\pj_1\obj\Debug\pj_1.exe
+C:\Users\Soft\Desktop\Проект 1\pj_1\pj_1\obj\Debug\pj_1.pdb
