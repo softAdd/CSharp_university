@@ -55,7 +55,8 @@ namespace pj_1
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             Image picture = Image.FromFile(dirPath + "files/images/default.jpg");
             pictureBox1.Image = picture;
-            comboBox1.Text = "Отбор по...";
+            comboBox1.Text = "Столбец...";
+            textBox9.Text = "Параметры поиска...";
         }
 
         private struct River
@@ -104,15 +105,17 @@ namespace pj_1
             label6.Hide();
             label7.Hide();
             label8.Hide();
+            label2.Hide();
             textBox3.Hide();
             textBox4.Hide();
             textBox5.Hide();
             textBox6.Hide();
             textBox7.Hide();
             textBox8.Hide();
+            button4.Hide();
+            textBox2.Hide();
             button3.Hide();
             button1.Hide();
-            pictureBox1.Hide();
         }
         
         private void nowShow()
@@ -126,12 +129,14 @@ namespace pj_1
             textBox3.Show();
             textBox4.Show();
             textBox5.Show();
+            textBox2.Show();
             textBox6.Show();
+            label2.Show();
             textBox7.Show();
             textBox8.Show();
             button3.Show();
+            button4.Show();
             button1.Show();
-            pictureBox1.Show();
         }
 
         private void dataGridView1_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
@@ -178,39 +183,6 @@ namespace pj_1
                               select river;
                     dataGridView1.Rows.Clear();
                     foreach (var elem in sel)
-                    {
-                        setAllFieldsRiver(elem);
-                    }
-                    break;
-                case 1:
-                    /* LINQ */
-                    var sel1 = from river in _Rivers
-                               where river.extent > 4500
-                               select river;
-                    dataGridView1.Rows.Clear();
-                    foreach (var elem in sel1)
-                    {
-                        setAllFieldsRiver(elem);
-                    }
-                    break;
-                case 2:
-                    /* LINQ */
-                    var sel2 = from river in _Rivers
-                               where river.extent == river.extentRussia
-                               select river;
-                    dataGridView1.Rows.Clear();
-                    foreach (var elem in sel2)
-                    {
-                        setAllFieldsRiver(elem);
-                    }
-                    break;
-                case 3:
-                    /* LINQ */
-                    var sel3 = from river in _Rivers
-                               where river.flowsInto.Contains("Лена")
-                               select river;
-                    dataGridView1.Rows.Clear();
-                    foreach (var elem in sel3)
                     {
                         setAllFieldsRiver(elem);
                     }
@@ -330,6 +302,109 @@ namespace pj_1
             catch
             {
                 MessageBox.Show("Произошла ошибка при попытке сохранить :С");
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+        
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int.TryParse(textBox2.Text, out int index);
+            try
+            {
+                _Rivers.RemoveAt(index - 1);
+
+            }
+            catch
+            {
+                MessageBox.Show("Во время удаления произошла ошибка!");
+            }
+            textBox2.Text = "";
+            refresh();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        public bool clicked = false;
+        private void textBox9_Click(object sender, EventArgs e)
+        {
+            if (!clicked)
+            {
+                clicked = true;
+                textBox9.Text = "";
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string text = textBox9.Text;
+            switch(comboBox1.SelectedIndex)
+            {
+                case 0:
+                    break;
+                case 1:
+                    /* LINQ */
+                    var sel = from river in _Rivers
+                              where river.title.Contains(text)
+                              select river;
+                    dataGridView1.Rows.Clear();
+                    foreach (var elem in sel)
+                    {
+                        setAllFieldsRiver(elem);
+                    }
+                    break;
+                case 2:
+                    /* LINQ */
+                    try
+                    {
+                        var sel1 = from river in _Rivers
+                                   where river.extent > int.Parse(text)
+                                   select river;
+                        dataGridView1.Rows.Clear();
+                        foreach (var elem in sel1)
+                        {
+                            setAllFieldsRiver(elem);
+                        }
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Введите корректный текст!");
+                    }
+                    break;
+                case 3:
+                    /* LINQ */
+                    var sel2 = from river in _Rivers
+                               where river.flowsInto.Contains(text)
+                               select river;
+                    dataGridView1.Rows.Clear();
+                    foreach (var elem in sel2)
+                    {
+                        setAllFieldsRiver(elem);
+                    }
+                    break;
+                default: break;
             }
         }
     }
