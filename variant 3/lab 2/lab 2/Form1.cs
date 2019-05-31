@@ -36,46 +36,16 @@ namespace lab_2
             new Good { Id=7, Title="Ведро - 40р", Price=40 },
             new Good { Id=8, Title="Пленка защитная - 40р", Price=40 }
         };
-        public double discount = 1;
+        public double discount = 0;
         private void Form1_Load(object sender, EventArgs e)
         {
             listBox1.DisplayMember = "Title";
             listBox1.ValueMember = "Price";
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox1.Checked)
-            {
-                checkBox2.Checked = false;
-                checkBox3.Checked = false;
-                discount = 1;
-            }
-        }
-
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox2.Checked)
-            {
-                checkBox3.Checked = false;
-                checkBox1.Checked = false;
-                discount = 0.95;
-            }
-        }
-
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox3.Checked)
-            {
-                checkBox1.Checked = false;
-                checkBox2.Checked = false;
-                discount = 0.97;
-            }
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!checkBox1.Checked && !checkBox2.Checked && !checkBox3.Checked)
+            if (discount == 0)
             {
                 MessageBox.Show("Выберите способ оплаты!");
             } else
@@ -89,6 +59,21 @@ namespace lab_2
                     MessageBox.Show("Цена товара с учетом всех скидок и количества: " + price.ToString());
                 }
             }
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            discount = 1;
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            discount = 0.95;
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            discount = 0.97;
         }
     }
 }
