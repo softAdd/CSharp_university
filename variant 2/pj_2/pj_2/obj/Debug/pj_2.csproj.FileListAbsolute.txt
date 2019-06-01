@@ -1,0 +1,15 @@
+C:\Users\Soft\Desktop\pj_2\pj_2\bin\Debug\pj_2.exe.config
+C:\Users\Soft\Desktop\pj_2\pj_2\bin\Debug\pj_2.exe
+C:\Users\Soft\Desktop\pj_2\pj_2\bin\Debug\pj_2.pdb
+C:\Users\Soft\Desktop\pj_2\pj_2\obj\Debug\pj_2.csprojAssemblyReference.cache
+C:\Users\Soft\Desktop\pj_2\pj_2\obj\Debug\MainWindow.g.cs
+C:\Users\Soft\Desktop\pj_2\pj_2\obj\Debug\App.g.cs
+C:\Users\Soft\Desktop\pj_2\pj_2\obj\Debug\pj_2_MarkupCompile.cache
+C:\Users\Soft\Desktop\pj_2\pj_2\obj\Debug\pj_2_MarkupCompile.lref
+C:\Users\Soft\Desktop\pj_2\pj_2\obj\Debug\MainWindow.baml
+C:\Users\Soft\Desktop\pj_2\pj_2\obj\Debug\pj_2.g.resources
+C:\Users\Soft\Desktop\pj_2\pj_2\obj\Debug\pj_2.Properties.Resources.resources
+C:\Users\Soft\Desktop\pj_2\pj_2\obj\Debug\pj_2.csproj.GenerateResource.cache
+C:\Users\Soft\Desktop\pj_2\pj_2\obj\Debug\pj_2.csproj.CoreCompileInputs.cache
+C:\Users\Soft\Desktop\pj_2\pj_2\obj\Debug\pj_2.exe
+C:\Users\Soft\Desktop\pj_2\pj_2\obj\Debug\pj_2.pdb
