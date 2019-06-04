@@ -1,0 +1,10 @@
+C:\Users\Soft\Desktop\lab 5\lab 5\obj\Debug\lab 5.csprojAssemblyReference.cache
+C:\Users\Soft\Desktop\lab 5\lab 5\obj\Debug\lab_5.Form1.resources
+C:\Users\Soft\Desktop\lab 5\lab 5\obj\Debug\lab_5.Properties.Resources.resources
+C:\Users\Soft\Desktop\lab 5\lab 5\obj\Debug\lab 5.csproj.GenerateResource.cache
+C:\Users\Soft\Desktop\lab 5\lab 5\obj\Debug\lab 5.csproj.CoreCompileInputs.cache
+C:\Users\Soft\Desktop\lab 5\lab 5\bin\Debug\lab 5.exe.config
+C:\Users\Soft\Desktop\lab 5\lab 5\bin\Debug\lab 5.exe
+C:\Users\Soft\Desktop\lab 5\lab 5\bin\Debug\lab 5.pdb
+C:\Users\Soft\Desktop\lab 5\lab 5\obj\Debug\lab 5.exe
+C:\Users\Soft\Desktop\lab 5\lab 5\obj\Debug\lab 5.pdb
