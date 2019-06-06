@@ -1,0 +1,58 @@
+﻿<Window x:Class="_7_impr_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_7_impr_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.65*"/>
+            <ColumnDefinition Width="0.8*" />
+            <ColumnDefinition Width="0.65*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.1*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="1" Grid.Row="1" Background="DarkSlateGray">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.02*"/>
+                <RowDefinition Height="0.3*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.3*"/>
+                <RowDefinition Height="0.02*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.01*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.01*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Orientation="Horizontal">
+                <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MinHeight="30" MinWidth="70" Background="Black" Foreground="White" Margin="10 10 10 10" FontSize="22">One</Button>
+                <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MinHeight="30" MinWidth="70" Background="Black" Foreground="White" Margin="10 10 10 10" FontSize="22">Two</Button>
+                <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MinHeight="30" MinWidth="70" Background="Black" Foreground="White" Margin="10 10 10 10" FontSize="22">Three</Button>
+            </StackPanel>
+            <Grid Grid.Column="1"  Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+            </Grid>
+            <Grid Grid.Column="1"  Grid.Row="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Foreground="Azure" Background="Black" FontStretch="Medium" FontSize="30" TextAlignment="Center">Этот текст</TextBlock>
+            </Grid>
+            <StackPanel Grid.Column="1" Grid.Row="2">
+                <Button Background="DarkGreen" Margin="10 10 10 10" FontSize="22">One</Button>
+                <Button Background="DarkGreen" Margin="10 10 10 10" FontSize="22">Two</Button>
+                <Button Background="DarkGreen" Margin="10 10 10 10" FontSize="22">Three</Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

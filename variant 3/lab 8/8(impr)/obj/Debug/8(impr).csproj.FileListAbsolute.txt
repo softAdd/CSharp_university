@@ -1,0 +1,15 @@
+C:\Users\Soft\Downloads\2 вариант\8\8(impr)\bin\Debug\8(impr).exe.config
+C:\Users\Soft\Downloads\2 вариант\8\8(impr)\bin\Debug\8(impr).exe
+C:\Users\Soft\Downloads\2 вариант\8\8(impr)\bin\Debug\8(impr).pdb
+C:\Users\Soft\Downloads\2 вариант\8\8(impr)\obj\Debug\8(impr).csprojAssemblyReference.cache
+C:\Users\Soft\Downloads\2 вариант\8\8(impr)\obj\Debug\MainWindow.g.cs
+C:\Users\Soft\Downloads\2 вариант\8\8(impr)\obj\Debug\App.g.cs
+C:\Users\Soft\Downloads\2 вариант\8\8(impr)\obj\Debug\8(impr)_MarkupCompile.cache
+C:\Users\Soft\Downloads\2 вариант\8\8(impr)\obj\Debug\8(impr)_MarkupCompile.lref
+C:\Users\Soft\Downloads\2 вариант\8\8(impr)\obj\Debug\MainWindow.baml
+C:\Users\Soft\Downloads\2 вариант\8\8(impr)\obj\Debug\8(impr).g.resources
+C:\Users\Soft\Downloads\2 вариант\8\8(impr)\obj\Debug\_8_impr_.Properties.Resources.resources
+C:\Users\Soft\Downloads\2 вариант\8\8(impr)\obj\Debug\8(impr).csproj.GenerateResource.cache
+C:\Users\Soft\Downloads\2 вариант\8\8(impr)\obj\Debug\8(impr).csproj.CoreCompileInputs.cache
+C:\Users\Soft\Downloads\2 вариант\8\8(impr)\obj\Debug\8(impr).exe
+C:\Users\Soft\Downloads\2 вариант\8\8(impr)\obj\Debug\8(impr).pdb
