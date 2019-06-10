@@ -1,0 +1,50 @@
+C:\Users\Admin\source\repos\comm\l4-il\l4-il\bin\Debug\l4-il.exe.config
+C:\Users\Admin\source\repos\comm\l4-il\l4-il\bin\Debug\l4-il.exe
+C:\Users\Admin\source\repos\comm\l4-il\l4-il\bin\Debug\l4-il.pdb
+C:\Users\Admin\source\repos\comm\l4-il\l4-il\obj\Debug\l4-il.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\comm\l4-il\l4-il\obj\Debug\l4_il.Form1.resources
+C:\Users\Admin\source\repos\comm\l4-il\l4-il\obj\Debug\l4_il.Properties.Resources.resources
+C:\Users\Admin\source\repos\comm\l4-il\l4-il\obj\Debug\l4-il.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\comm\l4-il\l4-il\obj\Debug\l4-il.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\comm\l4-il\l4-il\obj\Debug\l4-il.exe
+C:\Users\Admin\source\repos\comm\l4-il\l4-il\obj\Debug\l4-il.pdb
+C:\Users\Владелец\Desktop\l4-il\l4-il\bin\Debug\l4-il.exe.config
+C:\Users\Владелец\Desktop\l4-il\l4-il\bin\Debug\l4-il.exe
+C:\Users\Владелец\Desktop\l4-il\l4-il\bin\Debug\l4-il.pdb
+C:\Users\Владелец\Desktop\l4-il\l4-il\obj\Debug\l4-il.csprojAssemblyReference.cache
+C:\Users\Владелец\Desktop\l4-il\l4-il\obj\Debug\l4_il.Form1.resources
+C:\Users\Владелец\Desktop\l4-il\l4-il\obj\Debug\l4_il.Properties.Resources.resources
+C:\Users\Владелец\Desktop\l4-il\l4-il\obj\Debug\l4-il.csproj.GenerateResource.cache
+C:\Users\Владелец\Desktop\l4-il\l4-il\obj\Debug\l4-il.csproj.CoreCompileInputs.cache
+C:\Users\Владелец\Desktop\l4-il\l4-il\obj\Debug\l4-il.exe
+C:\Users\Владелец\Desktop\l4-il\l4-il\obj\Debug\l4-il.pdb
+E:\l4-il\l4-il\bin\Debug\l4-il.exe.config
+E:\l4-il\l4-il\bin\Debug\l4-il.exe
+E:\l4-il\l4-il\bin\Debug\l4-il.pdb
+E:\l4-il\l4-il\obj\Debug\l4-il.csprojAssemblyReference.cache
+E:\l4-il\l4-il\obj\Debug\l4_il.Form1.resources
+E:\l4-il\l4-il\obj\Debug\l4_il.Properties.Resources.resources
+E:\l4-il\l4-il\obj\Debug\l4-il.csproj.GenerateResource.cache
+E:\l4-il\l4-il\obj\Debug\l4-il.csproj.CoreCompileInputs.cache
+E:\l4-il\l4-il\obj\Debug\l4-il.exe
+E:\l4-il\l4-il\obj\Debug\l4-il.pdb
+C:\Users\Soft\Desktop\l4-il\l4-il\bin\Debug\l4-il.exe.config
+C:\Users\Soft\Desktop\l4-il\l4-il\bin\Debug\l4-il.exe
+C:\Users\Soft\Desktop\l4-il\l4-il\bin\Debug\l4-il.pdb
+C:\Users\Soft\Desktop\l4-il\l4-il\obj\Debug\l4-il.csprojAssemblyReference.cache
+C:\Users\Soft\Desktop\l4-il\l4-il\obj\Debug\l4_il.Form1.resources
+C:\Users\Soft\Desktop\l4-il\l4-il\obj\Debug\l4_il.Properties.Resources.resources
+C:\Users\Soft\Desktop\l4-il\l4-il\obj\Debug\l4-il.csproj.GenerateResource.cache
+C:\Users\Soft\Desktop\l4-il\l4-il\obj\Debug\l4-il.csproj.CoreCompileInputs.cache
+C:\Users\Soft\Desktop\l4-il\l4-il\obj\Debug\l4-il.exe
+C:\Users\Soft\Desktop\l4-il\l4-il\obj\Debug\l4-il.pdb
+C:\Users\Soft\Desktop\CSharp_university\variant 3\lab 7\l4-il\bin\Debug\l4-il.exe.config
+C:\Users\Soft\Desktop\CSharp_university\variant 3\lab 7\l4-il\bin\Debug\l4-il.exe
+C:\Users\Soft\Desktop\CSharp_university\variant 3\lab 7\l4-il\bin\Debug\l4-il.pdb
+C:\Users\Soft\Desktop\CSharp_university\variant 3\lab 7\l4-il\obj\Debug\l4-il.csprojAssemblyReference.cache
+C:\Users\Soft\Desktop\CSharp_university\variant 3\lab 7\l4-il\obj\Debug\l4_il.Form1.resources
+C:\Users\Soft\Desktop\CSharp_university\variant 3\lab 7\l4-il\obj\Debug\l4_il.Properties.Resources.resources
+C:\Users\Soft\Desktop\CSharp_university\variant 3\lab 7\l4-il\obj\Debug\l4-il.csproj.GenerateResource.cache
+C:\Users\Soft\Desktop\CSharp_university\variant 3\lab 7\l4-il\obj\Debug\l4-il.csproj.CoreCompileInputs.cache
+C:\Users\Soft\Desktop\CSharp_university\variant 3\lab 7\l4-il\obj\Debug\l4-il.exe
+C:\Users\Soft\Desktop\CSharp_university\variant 3\lab 7\l4-il\obj\Debug\l4-il.pdb
