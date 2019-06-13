@@ -1,0 +1,41 @@
+﻿<Window x:Class="lab_9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab_9"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+            <RadioButton x:Name="Money" GroupName="Payment" Margin="10 20 10 10" IsChecked="True">Наличные</RadioButton>
+            <RadioButton x:Name="Visa" GroupName="Payment" Margin="10 20 10 10">Visa</RadioButton>
+            <RadioButton x:Name="MC" GroupName="Payment" Margin="10 20 10 10">MasterCard</RadioButton>
+            <TextBox x:Name="Counter" Margin="10 30 10 20" PreviewMouseDown="Counter_PreviewMouseDown"></TextBox>
+        </StackPanel>
+        <ListBox x:Name="Products" Grid.Column="1"></ListBox>
+        <Grid  Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button x:Name="Order" Grid.Column="1" Grid.Row="6" Click="Order_Click" Margin="5 10 5 10">Заказать</Button>
+        </Grid>
+        
+    </Grid>
+</Window>
