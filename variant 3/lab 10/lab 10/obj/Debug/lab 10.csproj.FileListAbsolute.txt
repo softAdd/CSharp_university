@@ -1,0 +1,19 @@
+C:\Users\Soft\Desktop\C#\CSharp_university\variant 3\lab 10\lab 10\bin\Debug\lab 10.exe.config
+C:\Users\Soft\Desktop\C#\CSharp_university\variant 3\lab 10\lab 10\bin\Debug\lab 10.exe
+C:\Users\Soft\Desktop\C#\CSharp_university\variant 3\lab 10\lab 10\bin\Debug\lab 10.pdb
+C:\Users\Soft\Desktop\C#\CSharp_university\variant 3\lab 10\lab 10\obj\Debug\lab 10.csprojAssemblyReference.cache
+C:\Users\Soft\Desktop\C#\CSharp_university\variant 3\lab 10\lab 10\obj\Debug\MainWindow.g.cs
+C:\Users\Soft\Desktop\C#\CSharp_university\variant 3\lab 10\lab 10\obj\Debug\App.g.cs
+C:\Users\Soft\Desktop\C#\CSharp_university\variant 3\lab 10\lab 10\obj\Debug\lab 10_MarkupCompile.cache
+C:\Users\Soft\Desktop\C#\CSharp_university\variant 3\lab 10\lab 10\obj\Debug\lab 10_MarkupCompile.lref
+C:\Users\Soft\Desktop\C#\CSharp_university\variant 3\lab 10\lab 10\obj\Debug\MainWindow.baml
+C:\Users\Soft\Desktop\C#\CSharp_university\variant 3\lab 10\lab 10\obj\Debug\lab 10.g.resources
+C:\Users\Soft\Desktop\C#\CSharp_university\variant 3\lab 10\lab 10\obj\Debug\lab_10.Properties.Resources.resources
+C:\Users\Soft\Desktop\C#\CSharp_university\variant 3\lab 10\lab 10\obj\Debug\lab 10.csproj.GenerateResource.cache
+C:\Users\Soft\Desktop\C#\CSharp_university\variant 3\lab 10\lab 10\obj\Debug\lab 10.csproj.CoreCompileInputs.cache
+C:\Users\Soft\Desktop\C#\CSharp_university\variant 3\lab 10\lab 10\obj\Debug\lab 10.exe
+C:\Users\Soft\Desktop\C#\CSharp_university\variant 3\lab 10\lab 10\obj\Debug\lab 10.pdb
+C:\Users\Soft\Desktop\C#\CSharp_university\variant 3\lab 10\lab 10\obj\Debug\HomeAndStar.g.cs
+C:\Users\Soft\Desktop\C#\CSharp_university\variant 3\lab 10\lab 10\obj\Debug\Rainbow.g.cs
+C:\Users\Soft\Desktop\C#\CSharp_university\variant 3\lab 10\lab 10\obj\Debug\HomeAndStar.baml
+C:\Users\Soft\Desktop\C#\CSharp_university\variant 3\lab 10\lab 10\obj\Debug\Rainbow.baml
